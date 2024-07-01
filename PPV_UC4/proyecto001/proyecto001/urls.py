@@ -22,9 +22,7 @@ urlpatterns = [
     path('', views.index, name = "index"),
     path('inicio/', views.index, name = "inicio"),
     path('saludo/', views.saludo, name = "saludo"),
-    path('rango/', views.rango, name="rango"),
     path('integrantes/', views.integrantes, name="integrantes"),
-    path('calculadora/', views.calculadora, name="calculadora"),
 
 
 
