@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            {% block title  %}
+
+            
+
+            {% endblock %} 
+
+
+            | PPV_UC04
+            
+        </title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+
+    </head>
+    <body>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+
+
+        <h2> UC4 (LP3 - 2024) | PAYE - PASCUAL - VALDIVIESO </h2>
+    <hr/>
+    <ul>
+        <li>
+            <a href="/inicio"> Inicio</a>
+        </li>
+        <li>
+            <a href="/saludo"> Mensaje de Saludo</a>
+        </li>
+
+        <li>
+            <a href="/integrantes"> Integrantes</a>
+        </li>
+
+       
+    </ul>
+    <hr/>
+
+
+
+        <div id="content">
+            {% block content %}
+
+            <strong> Contenido en layout (Padre) </strong>
+
+            {% endblock %} 
+        
+        </div>
+        <footer>
+
+            <hr/>
+    <ul>
+        <li>UNTELS - LP3 &copy; PPV
+        </ul>
+        <hr/>
+
+        </footer>
+    </body>
+</html>
